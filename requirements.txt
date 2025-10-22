@@ -38,7 +38,7 @@ pillow==10.3.0
 psutil
 lexica-api
 ntgcalls
-pytgcalls==3.0.0.dev20
+pytgcalls==3.0.0.dev24
 pycountry
 pycryptodome
 pydub
