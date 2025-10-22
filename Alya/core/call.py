@@ -3,19 +3,20 @@ import os
 from datetime import datetime, timedelta
 from typing import Union
 
-from pytgcalls import filters
-from pyrogram import Client
-from pyrogram.types import InlineKeyboardMarkup
-from pytgcalls import PyTgCalls, StreamType
-from pytgcalls.exceptions import (
+# ✅ Correct imports for the new py-tgcalls
+from py_tgcalls import PyTgCalls, StreamType, filters
+from py_tgcalls.exceptions import (
     AlreadyJoinedError,
     NoActiveGroupCall,
     TelegramServerError,
 )
-from pytgcalls.types import Update
-from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
-from pytgcalls.types.stream import StreamAudioEnded
+from py_tgcalls.types import Update
+from py_tgcalls.types.input_stream import AudioPiped, AudioVideoPiped
+from py_tgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
+from py_tgcalls.types.stream import StreamAudioEnded
+
+from pyrogram import Client
+from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from Alya import LOGGER, YouTube, app
