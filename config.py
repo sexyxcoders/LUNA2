@@ -7,28 +7,28 @@ load_dotenv()
 
 API_ID = 23321960
 API_HASH = "a334659dd1e01f78c189fc93fc6db455"
-BOT_TOKEN = "7922289237:AAEjHTUvg4hEbo1AgI_Edp2EOBWIw2i5R9k"
-OWNER_USERNAME = "@Og_Goku_God_7"
-BOT_USERNAME = "@Nefermusicbot"
-BOT_NAME = "Nefer music"
-ASSUSERNAME = "@Neferxassistant"
-EVALOP = list(map(int, getenv("EVALOP", "5268691896").split()))
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Sasuke_680:Sasuke_680@cluster0.xds2ykw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-LOGGER_ID = -1002918784392
+BOT_TOKEN = "8380480804:AAFCjO70YKP-2NnamUjbsgCYbTQk49dLT48"
+OWNER_USERNAME = "@Suicidemoments"
+BOT_USERNAME = "@SafetronixMusicBot"
+BOT_NAME = "𝖲𝖺𝖿𝖾𝗍𝗋𝗈𝗇𝗂𝗑 𝖬𝗎𝗌𝗂𝖼"
+ASSUSERNAME = "@SafetronixAssistant"
+EVALOP = list(map(int, getenv("EVALOP", "8076443359").split()))
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ahad0181888:ahad0181888@cluster0.f9casz0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+LOGGER_ID = -1003138759746
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 GPT_API = getenv("GPT_API", None)
 DEEP_API = getenv("DEEP_API", None)
-OWNER_ID = 7793156995
+OWNER_ID = 7857598507
 
 HEROKU_APP_NAME = None
 HEROKU_API_KEY = None
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/DeadliestOne/Alya.git")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/sexyxcoders/LUNA")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", "")
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/eternal_bot_update")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Eternal_Anime_chat")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SafetronixNetwork")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TNCmeetup")
 
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "11500"))
@@ -42,7 +42,7 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "c9c63c6fbf2f467c8bc6862
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 
-STRING1 = getenv("STRING_SESSION" ,"BQFj3WgACAydO4RJ_jPjCgKS2WVN_Ly423URDOQOum0rStKdqIv-W--4-XfpzFkVNQcZoEhxXct9C4SDzWYBLz-zpt9QmKRVePHlaNrFst_c5LyDVwtxoWTiDbI75UpbGzdhKZbj_a_KjTVnV4BUGmW8OTuRgqi7OR1BEdpDa8NaGdQtnqvmYYr14SEl_HZP-t4EGUGj4upJEhMJpLft7rQ4mXY2i-88RP316uTsxQia7YJtAtg1G6krZjyJcCsznnvEePkbrlnUYmOkV0fprTW7XIP1WXdB-FfvGxwrM4UqJU5EstsW4We2pIhQonS-rK4sDDtPGr60BZ8aXawQqsKA6xNzyAAAAAFrDRd3AA") 
+STRING1 = getenv("STRING_SESSION" ,"BACOaU4AOrGAJ4ZSA0yWG9gRkyyYCKZlOerdlYeruqGK2LHwG8e35cmxpEfaZ4ArGoZ23w2LU3dZZZFoUUOl1ifBLuK91xqHBo4gWwtZdRDFUiKEDt1SYfwx7-AnlzgcaYiwDWRY7Raep-K-ARHS-HWUGLqGkDwCQ5KatrlIzrbZAAJQFL9kfxSi-I4ZnXTkPzEqSzOp8HaQDduh5LPzd7B_SLyS9MBbo9534zsLG_3vo-5LbKddmZ49RXIAAAvdLA4u0PFVBu3VMckRFTE26tds6wq8MQQP52TnNW0tkVcVmoHT1mNK9MBdqS8TDR65tWb-6JXFOVmeuFlZGn-zseAP2bFvuQAAAAHk8qpoAA") 
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
