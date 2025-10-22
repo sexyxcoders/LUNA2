@@ -1,15 +1,24 @@
-# Base image with Python 3.10 and Node.js 19
-FROM nikolaik/python-nodejs:python3.10-nodejs19
+# Use slim Python 3.10 base image
+FROM python:3.10-slim-bullseye
 
 # Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Update Debian sources and install dependencies
-RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \
-    sed -i '/security.debian.org/d' /etc/apt/sources.list && \
-    apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg aria2 && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+# Install system dependencies: FFmpeg, curl, Node.js (LTS)
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    ffmpeg \
+    curl \
+    gnupg \
+    build-essential \
+    aria2 \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js 19 (latest)
+RUN curl -fsSL https://deb.nodesource.com/setup_19.x | bash - && \
+    apt-get install -y nodejs && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
@@ -26,5 +35,5 @@ COPY . .
 # Expose port (optional for webhooks)
 EXPOSE 5000
 
-# Run the bot
+# Start bot
 CMD ["python", "-m", "Alya"]
